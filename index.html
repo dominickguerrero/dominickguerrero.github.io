@@ -1,1 +1,48 @@
-Hello Marie :D
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<style>
+    h2 {
+        color: rgb(0, 81, 255);
+        text-align: center;
+    }
+    #btn {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;       
+    }
+    .container {
+        position: relative;
+        text-align: center;
+    }
+    #btn {
+        position: static;
+    }
+    </style>
+<body>
+   
+    <div class="container">
+        <h2>Hello there</h2>
+        <button class ="button" id="btn" value="That was fun!🤣" onclick="myFunction()">Press me for fun!😏</button>
+        <p id="btnp"></p>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("btn").value;
+                document.getElementById("btnp").innerHTML = x;
+            }
+        </script>
+    </div>
+    
+    
+</body>
+</html>
